@@ -1,5 +1,7 @@
 [buildpack]
+id = "pnpm.node.buildpack"
 name = "Node.js"
+version = "1.0.0"
 
   [publish.Ignore]
   files = [
@@ -29,3 +31,6 @@ name = "Node.js"
       "yarn2-plugins/prune-dev-dependencies/jest.config.js",
       "yarn2-plugins/prune-dev-dependencies/src",
   ]
+
+[[stacks]]
+id = "heroku-22"
